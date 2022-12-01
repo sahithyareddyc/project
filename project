@@ -1,0 +1,153 @@
+import java.util.Scanner;
+public class Project
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+Admin cabs=new Admin();
+cabs.search();
+}
+}
+class Admin
+{
+public String name;
+public long number;
+public String destination;
+public String presentAddress;
+public String available;
+public String payment;
+public int cancel;
+Scanner sc1=new Scanner(System.in);
+int ch;
+void search()
+{
+System.out.println("      *********😍WELCOME TO KANYA ONLINE CAB BOOKINGS 😍*******");
+System.out.println("Enter your Name");
+name=sc1.next();
+System.out.println("WELCOME "+name+" TO KANYA CAB BOOKING, HOPE YOU ENJOY YOUR SERVICES");
+System.out.println("Enter your mobile number");
+number=sc1.nextLong();
+System.out.println("Enter your present location");
+presentAddress=sc1.next();
+System.out.println("Enter your destination address");
+destination=sc1.next();
+System.out.println("Number of cabs available");
+available=sc1.next();
+{
+do
+{
+System.out.println("1.AC cab");
+           System.out.println("2.NON AC cab");
+           System.out.println("3.AUDI");
+           System.out.println("4.FORD");
+           System.out.println("5.TOYOTO");
+           System.out.println("6.Exit");
+           System.out.println("ENTER YOUR CHOICE");
+           int ch=sc1.nextInt();
+           switch(ch)
+{
+case 1:
+System.out.println("your cab is selected");
+System.out.println("your cab number is Ap 4560");
+System.out.println("Enter the payment");
+payment=sc1.next();
+System.out.println("Your payment is Succeessful......");
+System.out.println("Did you want to cancel the cab");
+System.out.println("Press 1 for yes and press 0 for no");
+int again=sc1.nextInt();
+if(again==1)
+{
+  System.out.println("Your cab is cancelled");
+  System.out.println("Your amount is credited to register account");
+  System.out.println("           ****THANK YOU****                 ");
+}
+System.out.println("😍************ENJOY YOUR DAY******************😍");
+System.out.println("GIVE YOUR RATINS");
+cancel=sc1.nextInt();
+break;
+case 2:
+System.out.println("your cab is selected");
+System.out.println("your cab number is ap 490253");
+System.out.println("Enter the payment");
+payment=sc1.next();
+System.out.println("Your payment is Succeessful......");
+System.out.println("Did you want to cancel the cab");
+System.out.println("Press 1 for yes and press 0 for no");
+int R=sc1.nextInt();
+if(R==1)
+{
+  System.out.println("Your cab is cancelled");
+  System.out.println("Your amount is credited to register account");
+  System.out.println("      *****THANK YOU******           ");
+}
+System.out.println("😍****************ENJOY YOUR DAY*******************😍");
+System.out.println("GIVE YOUR RATINS");
+cancel=sc1.nextInt();
+break;
+case 3:
+System.out.println("your cab is selected");
+System.out.println("your cab number is ap 65895");
+System.out.println("Enter the payment");
+payment=sc1.next();
+System.out.println("Your payment is Succeessful......");
+System.out.println("Did you want to cancel the cab");
+System.out.println("Press 1 for yes and press 0 for no");
+int a=sc1.nextInt();
+if(a==1)
+{
+  System.out.println("Your cab is cancelled");
+  System.out.println("Your amount is credited to register account");
+  System.out.println("      *****THANK YOU******           ");
+}
+System.out.println("😍******************ENJOY YOUR DAY****************😍");
+System.out.println("GIVE YOUR RATINS");
+cancel=sc1.nextInt();
+break;
+case 4:
+System.out.println("your cab is selected");
+System.out.println("your cab number is ap 29384");
+System.out.println("Enter the payment");
+payment=sc1.next();
+System.out.println("Your payment is Succeessful......");
+System.out.println("Did you want to cancel the cab");
+System.out.println("Press 1 for yes and press 0 for no");
+int b=sc1.nextInt();
+if(b==1)
+{
+  System.out.println("Your cab is cancelled");
+  System.out.println("Your amount is credited to register account");
+  System.out.println("      *****THANK YOU******           ");
+}
+System.out.println("😍*******************ENJOY YOUR DAY*********************😍");
+System.out.println("GIVE YOUR RATINS");
+cancel=sc1.nextInt();
+break;
+case 5:
+System.out.println("your cab is selected");
+System.out.println("Your cab number is ap 99770");
+System.out.println("Enter the payment");
+payment=sc1.next();
+System.out.println("Your payment is Succeessful......");
+System.out.println("Did you want to cancel the cab");
+System.out.println("Press 1 for yes and press 0 for no");
+int c=sc1.nextInt();
+if(c==1)
+{
+  System.out.println("Your cab is cancelled");
+  System.out.println("Your amount is credited to register account");
+  System.out.println("      *****THANK YOU******           ");
+}
+System.out.println("😍******************888ENJOY DAY****************😍");
+System.out.println("GIVE YOUR RATINS");
+cancel=sc1.nextInt();
+break;
+case 6:
+System.out.println("THANK YOU.................");
+}
+}while(ch==7);
+{
+    System.out.println("🙂SORRY WE CANNOT FOUND CABS🙂");
+}
+}
+}
+}
