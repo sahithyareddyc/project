@@ -1,0 +1,53 @@
+import java.util.*;
+class Animal
+{
+    public static void Dog()
+    {
+        System.out.println("Barging Booww..... Booooowwww");
+        System.out.println("eating");
+        }
+    public static void Cat()
+    {
+       System.out.println("meeyooving meeeeyaaav meeyaavvv........."); 
+       System.out.println("Drinking milk");
+    }
+    public static void parrot()
+    {
+        System.out.println("singing melodieesss");
+    }
+    public static void lion()
+    {
+        System.out.println("hunting and hurting");
+    }
+}
+   class Inherit extends Animal
+   {
+   public static void thara()
+    {
+        System.out.println("Always Shapping online");
+        System.out.println("talking");
+    }
+    public static void snake()
+    {
+       System.out.println("crawing");
+    }
+    public static void hen()
+    {
+        System.out.println("yoo waking up on morning times");
+        System.out.println("yammy yammy chicken");
+    }
+
+    
+    public static void main(String[] args)
+    {
+        Animal a=new Animal();
+        thara();
+        snake();
+        hen();
+        a.Dog();
+        a.Cat();
+        a.parrot();
+        a.lion();
+    }
+    
+}
