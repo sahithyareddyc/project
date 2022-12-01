@@ -1,0 +1,167 @@
+import java.util.*;
+public class Project3
+{
+public static void main(String args[])
+{
+      Scanner sc=new Scanner(System.in);
+      Login vote=new Login();
+      vote.search();
+}
+}
+class Login
+{
+   public String firstName;
+   public String lastName;
+   public String login;
+   public String password;
+   public String confirmPassword;
+   public Date dob;
+   public String mobileNo;
+   public long roleId;
+   public String gender;
+   public String voterId;
+   public int age,shrt;
+   Scanner sc1=new Scanner(System.in);
+   int ch;
+    void search()
+{
+System.out.println("                 ✌️ WELCOME TO REGION ELECTIONS✌️");
+System.out.println("ENTER YOUR AGE");
+age=sc1.nextInt();
+if(age>=18)
+ {
+ System.out.println("Welcome to 2022 candidate elections");
+ System.out.println(" Enter your First Name:");
+firstName=sc1.next();
+System.out.println(" Enter your Last Name:");
+lastName=sc1.next();
+System.out.println(" Enter your Voter card id number:");
+password=sc1.next();
+System.out.println("Confirm your Voter card id number::");
+confirmPassword=sc1.next();
+ System.out.println("Login is Successfully Completed");
+   System.out.println("CAST YOUR VALUABLE VOTE");
+ }
+ else
+ {
+ shrt= (18 - age);
+ System.out.println("Sorry,You can vote after :"+ shrt + " years");
+ }
+{
+do
+{
+    System.out.println("1.YSR");
+    System.out.println("2.TDP");
+    System.out.println("3.BJP");
+    System.out.println("4.TRS");
+    System.out.println("5.DMK");
+    System.out.println("6.ADMK");
+    System.out.println("7.Exit");
+    System.out.println("ENTER YOUR CHOICE");
+    int ch=sc1.nextInt();
+    switch(ch)
+    {
+        case 1:
+        System.out.println("YOUR PARTY IS SELECTED");
+        System.out.println("Are you sure to vote this particular party");
+        System.out.println("Press 0 for yes and press 1 for no");
+        int c=sc1.nextInt();
+        if(c==1)
+        {
+            System.out.println("your choosen party is cancelled");
+        }
+        else
+        {
+            System.out.println("Your vote is casted succesfully");
+            System.out.println("...........THANK YOU FOR CASTING YOUR VALUABLE VOTE................");
+           System.out.println("THE RESULTS WILL BE DECLARE SOON");
+        }
+        break;
+        case 2:
+            System.out.println("YOUR PARTY IS SELECTED");
+        System.out.println("Are you sure to vote this particular party");
+        System.out.println("Press 0 for yes and press 1 for no");
+        int d=sc1.nextInt();
+        if(d==1)
+        {
+            System.out.println("your choosen party is cancelled");
+        }
+        else
+        {
+            System.out.println("Your vote is casted succesfully");
+            System.out.println("...........THANK YOU FOR CASTING YOUR VALUABLE VOTE................");
+           System.out.println("THE RESULTS WILL BE DECLARE SOON");
+        }
+        break;
+        case 3:
+            System.out.println("YOUR PARTY IS SELECTED");
+        System.out.println("Are you sure to vote this particular party");
+        System.out.println("Press 0 for yes and press 1 for no");
+        int e=sc1.nextInt();
+        if(e==1)
+        {
+            System.out.println("your choosen party is cancelled");
+        }
+        else
+        {
+            System.out.println("Your vote is casted succesfully");
+            System.out.println("...........THANK YOU FOR CASTING YOUR VALUABLE VOTE................");
+           System.out.println("THE RESULTS WILL BE DECLARE SOON");
+        }
+        break;
+        case 4:
+            System.out.println("YOUR PARTY IS SELECTED");
+        System.out.println("Are you sure to vote this particular party");
+        System.out.println("Press 0 for yes and press 1 for no");
+        int f=sc1.nextInt();
+        if(f==1)
+        {
+            System.out.println("your choosen party is cancelled");
+        }
+        else
+        {
+            System.out.println("Your vote is casted succesfully");
+            System.out.println("...........THANK YOU FOR CASTING YOUR VALUABLE VOTE................");
+           System.out.println("THE RESULTS WILL BE DECLARE SOON");
+        }
+        break;
+        case 5:
+            System.out.println("YOUR PARTY IS SELECTED");
+        System.out.println("Are you sure to vote this particular party");
+        System.out.println("Press 0 for yes and press 1 for no");
+        int g=sc1.nextInt();
+        if(g==1)
+        {
+            System.out.println("your choosen party is cancelled");
+        }
+        else
+        {
+            System.out.println("Your vote is casted succesfully");
+            System.out.println("...........THANK YOU FOR CASTING YOUR VALUABLE VOTE................");
+           System.out.println("THE RESULTS WILL BE DECLARE SOON");
+        }
+        break;
+        case 6:
+            System.out.println("YOUR PARTY IS SELECTED");
+        System.out.println("Are you sure to vote this particular party");
+        System.out.println("Press 0 for yes and press 1 for no");
+        int h=sc1.nextInt();
+        if(h==1)
+        {
+            System.out.println("your choosen party is cancelled");
+        }
+        else
+        {
+            System.out.println("Your vote is casted succesfully");
+            System.out.println("...........THANK YOU FOR CASTING YOUR VALUABLE VOTE................");
+           System.out.println("THE RESULTS WILL BE DECLARE SOON");
+        }
+        break;
+        case 7:
+           System.out.println("...........THANK YOU FOR CASTING YOUR VALUABLE VOTE................");
+           System.out.println("THE RESULTS WILL BE DECLARE SOON");
+    }
+    }while(ch==8);
+}
+}
+}
